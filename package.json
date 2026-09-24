@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-auto-dev",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Auto.dev MCP — wraps the Auto.dev automotive data API (auto.dev)",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-82df120251705fda128b4312f78076f66f22a59e1c3807651ca19bbb740a7330",
+    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
   }
 }
