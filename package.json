@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-auto-dev",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Auto.dev MCP — wraps the Auto.dev automotive data API (auto.dev)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-auto-dev": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "auto-dev"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-auto-dev.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/auto-dev",
   "pipeworx": {
-    "sourceHash": "v1-c98cf972c3159b8a247f927b316d30163ec1a387785bca52188b713f82399596",
-    "sourceCommit": "93c7d52ace03a2bb9aee5e6024f6858adab0dd04"
+    "mode": "gateway",
+    "slug": "auto-dev",
+    "gatewaySlug": "auto-dev",
+    "sourceHash": "v1-c883e71475961f6e473e8c28ccdde56c1224f36384db5b1cb386854abd2816df",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
