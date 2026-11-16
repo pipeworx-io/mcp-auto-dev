@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-auto-dev",
-  "version": "0.2.1",
-  "description": "Auto.dev MCP — wraps the Auto.dev automotive data API (auto.dev)",
+  "version": "0.2.2",
+  "description": "Unofficial Auto.dev connector by Pipeworx: VIN decode, used-car listings and valuation.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "auto-dev",
     "gatewaySlug": "auto-dev",
-    "sourceHash": "v1-20bfbfc2bea11c1b0a5c6d7b75102b35b04d7c30711ec0772ddf02edb94e5138",
-    "sourceCommit": "5cb09714e895571153f3d9663c36ff0f140cadd6"
+    "sourceHash": "v1-095a62620167223549db873c49782a9e4aeaa92c6c03f9ee92f8d2208fd1c0af",
+    "sourceCommit": "874331b0c46b151f9264bd14840631427a7721c1"
   }
 }
